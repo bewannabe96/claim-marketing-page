@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-const KAKAO_CHANNEL_CUSTOMER = 'https://pf.kakao.com/_xxxxx?utm_source=landing&utm_medium=cta&utm_campaign=customer';
-const AGENT_FORM_URL = 'https://docs.google.com/forms/d/e/xxxxx/viewform?usp=sf_link';
+const KAKAO_CHANNEL_CUSTOMER = import.meta.env.PUBLIC_KAKAO_CHANNEL_CUSTOMER ?? '#';
+const AGENT_FORM_URL = import.meta.env.PUBLIC_AGENT_FORM_URL ?? '#';
 
 const problems = [
   {
